@@ -10,7 +10,7 @@ router.get('/', function(req, res) {
 router.get('/personalised-js-and-css', function(req, res) {
   console.log(req.query.ip);
   res.send({
-    js: '(function(){alert("Deze alert javascript is gefetched vanuit de UMS Mock api")}();)',
+    js: '(function(){alert("Deze alert javascript is gefetched vanuit de UMS Mock api")}())',
     css: 'h1{color:#ef4189!important;}'
   });
 });
